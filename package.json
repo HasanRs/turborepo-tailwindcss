@@ -65,5 +65,6 @@
     "hooks": {
       "pre-commit": "pretty-quick --staged"
     }
-  }
+  },
+  "packageManager": "npm@10.2.4"
 }

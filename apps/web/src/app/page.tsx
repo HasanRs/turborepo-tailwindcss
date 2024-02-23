@@ -1,31 +1,27 @@
-import { Button } from 'ui';
-
-const buttonVariants = [
-  'default',
-  'destructive',
-  'outline',
-  'secondary',
-  'ghost',
-  'link',
-] as const;
+import Companies from '../../components/companies';
+import Cookies from '../../components/cookies';
+import Customers from '../../components/customers';
+import Features from '../../components/features';
+import Footer from '../../components/footer';
+import Header from '../../components/header';
+import HeaderAlert from '../../components/headeralert';
+import Hero from '../../components/hero';
+import Pricing from '../../components/pricing';
+import SlidingText from '../../components/slidingtext';
 
 export default function Page() {
   return (
-    <div className='mt-8 items-center space-y-4'>
-      <div className='flex w-full justify-center text-3xl font-bold'>
-        Welcome to Next 13
-      </div>
-      <div className='flex w-full justify-center space-x-4'>
-        <ul className='items-center space-y-1 md:inline-flex md:space-x-1 md:space-y-0'>
-          {buttonVariants.map((variant) => (
-            <li key={variant}>
-              <Button variant={variant} className='capitalize'>
-                {variant}
-              </Button>
-            </li>
-          ))}
-        </ul>
-      </div>
+    <div className=''>
+      <HeaderAlert />
+      <Header />
+      <Hero />
+      <SlidingText />
+      <Companies />
+      <Features />
+      <Customers />
+      <Pricing />
+      <Cookies />
+      <Footer />
     </div>
   );
 }

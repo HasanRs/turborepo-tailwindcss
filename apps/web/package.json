@@ -9,9 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "axios": "^1.6.2",
     "config": "*",
+    "react-fast-marquee": "^1.6.2",
+    "shared-lib": "*",
+    "simple-peer": "^9.11.1",
+    "socket.io-client": "^4.7.2",
     "tsconfig": "*",
-    "ui": "*",
-    "shared-lib": "*"
+    "ui": "*"
   }
 }
